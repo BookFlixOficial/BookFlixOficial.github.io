@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@layer base {
+  /* Habilita o scroll suave para âncoras (IDs) */
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    background-color: var(--color-brand-dark);
+    color: white;
+    font-family:
+      "Inter",
+      system-ui,
+      -apple-system,
+      sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Customização da barra de rolagem para combinar com o tema escuro */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #1a1a1a;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 9999px;
+    border: 2px solid #1a1a1a;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #444;
+  }
+
+  /* Seleção de texto com a cor da marca */
+  ::selection {
+    background-color: var(--color-brand-red);
+    color: white;
+  }
+}
+
+@layer components {
+  .container {
+    max-width: 80rem; /* 1280px */
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
