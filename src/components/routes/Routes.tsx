@@ -1,9 +1,10 @@
-import { lazy, Suspense } from "react";
+import { lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
 import Inicio from "../../pages/Inicio";
 import Links from "../../pages/Links";
 import PoliticaDePrivacidade from "../../pages/PoliticaDePrivacidade";
 import TermoDeUso from "../../pages/TermoDeUso";
+import Erro404 from "../../pages/errors/Erro404";
 
 const App = lazy(() => import("../../App"));
 
@@ -27,6 +28,7 @@ export const Router = createBrowserRouter(
       ],
     },
     { path: Routes.links, element: <Links /> },
+    { path: "*", element: <Erro404 /> },
   ],
   { basename: Routes.inicio },
 );
