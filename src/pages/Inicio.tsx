@@ -1,7 +1,5 @@
-import React from 'react';
 import { 
   ArrowDownCircle, 
-  ArrowRight, 
   BookOpen, 
   ChevronRight, 
   Coffee, 
