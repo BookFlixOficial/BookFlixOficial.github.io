@@ -30,7 +30,8 @@ const FeatureCard = ({ icon: Icon, title, description, color }: {
 );
 
 export default function App() {
-  const downloadLink = "/versions/bookflix-release-v1.0.0-snapshot.apk";
+  const versionLastApk = "v2.0.0";
+  const downloadLink = `/versions/bookflix-release-${versionLastApk}-snapshot.apk`;
 
   return (
     <div className="bg-[#121212] text-white selection:bg-red-500 selection:text-white min-h-screen font-sans">
@@ -45,7 +46,7 @@ export default function App() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
               </span>
-              <span>Versão v1.0.0 Disponível</span>
+              <span>Versão {versionLastApk} Disponível</span>
             </div>
 
             <h1 className="text-5xl md:text-7xl font-black leading-[1.1] tracking-tight">
@@ -60,8 +61,7 @@ export default function App() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <a 
-                href={downloadLink}
-                download
+                href="#baixar"
                 className="bg-[#E50914] text-white px-10 py-4 rounded-lg font-bold text-lg flex items-center justify-center gap-2 hover:bg-[#b20710] transition-all shadow-xl shadow-red-600/20"
               >
                 Baixar APK agora <Download size={20} />
@@ -250,7 +250,7 @@ export default function App() {
                   <span className="text-[#E50914]">Bookflix APK</span>
                 </h2>
                 <p className="text-gray-400 leading-relaxed text-sm">
-                  Baixe a versão oficial v1.0.0. Por ser distribuído fora da Play Store, seu celular pode exibir avisos de segurança. 
+                  Baixe a versão oficial {versionLastApk}. Por ser distribuído fora da Play Store, seu celular pode exibir avisos de segurança. 
                   Fique tranquilo: o arquivo é <strong>totalmente seguro</strong> e livre de malwares.
                 </p>
                 <div className="flex items-start gap-3 bg-blue-500/10 border border-blue-500/20 p-4 rounded-xl">
