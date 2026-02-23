@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Bloquear apenas pastas de sistema ou versões antigas se necessário
+Disallow: /versions/
+
+# Link direto para o seu sitemap
+Sitemap: https://bookflixoficial.github.io/sitemap.xml
