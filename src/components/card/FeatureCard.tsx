@@ -1,23 +1,18 @@
-import type React from "react";
 
-// Criado em 26/01/2026  22:35:20
-interface FeatureCardProps {
-  readonly icon: React.ComponentType<{ className?: string; size?: number }>;
-  readonly title: string;
-  readonly description: string;
-  readonly color: string;
+interface FeatureCardProps { 
+  icon: any, 
+  title: string, 
+  description: string, 
+  color: string 
 }
 
-export default function FeatureCard({ icon: Icon, title, description, color }: FeatureCardProps) {
-  return (
-    <div className="bg-[#181818] p-8 rounded-2xl border border-white/5 hover:border-red-500/30 transition-all group text-left">
-      <div
-        className={`w-14 h-14 ${color} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}
-      >
-        <Icon className="text-white" size={28} />
-      </div>
-      <h3 className="text-xl font-bold text-white mb-3">{title}</h3>
-      <p className="text-gray-400 leading-relaxed">{description}</p>
+// Componente de Cartão de Funcionalidade integrado para evitar erros de importação
+export const FeatureCard = ({ icon: Icon, title, description, color }: FeatureCardProps) => (
+  <div className="bg-white/5 border border-white/10 p-8 rounded-2xl hover:bg-white/10 transition-all group">
+    <div className={`w-12 h-12 ${color} rounded-lg flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform`}>
+      <Icon className="text-white" size={24} />
     </div>
-  );
-}
+    <h3 className="text-xl font-bold mb-3">{title}</h3>
+    <p className="text-gray-400 leading-relaxed">{description}</p>
+  </div>
+);
