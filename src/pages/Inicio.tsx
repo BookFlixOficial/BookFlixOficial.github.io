@@ -12,7 +12,7 @@ import { FeatureCard } from "../components/card/FeatureCard";
 import { useEffect } from "react";
 
 export default function Home() {
-  const versionLastApk = "v2.0.0";
+  const versionLastApk = "v2.1.0";
   const downloadLink = `https://bookflixoficial.github.io/versions/bookflix-release-${versionLastApk}-snapshot.apk`;
 
   // Lógica para Scroll Automático via Hash (#baixar)
