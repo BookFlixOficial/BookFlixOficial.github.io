@@ -1,10 +1,10 @@
-import { 
-  ArrowDownCircle, 
-  BookOpen, 
-  Coffee, 
-  Download, 
-  Star, 
-  Users, 
+import {
+  ArrowDownCircle,
+  BookOpen,
+  Coffee,
+  Download,
+  Star,
+  Users,
   FileDown,
   ShieldCheck
 } from "lucide-react";
@@ -68,21 +68,19 @@ export default function Home() {
               </button>
             </div>
           </div>
+
           <div className="relative flex justify-center items-center">
             <div className="relative z-10 w-[280px] md:w-[320px] aspect-[9/19] bg-[#050505] rounded-[3rem] border-[8px] border-[#222] shadow-[0_0_100px_rgba(229,9,20,0.15)] overflow-hidden">
-              <div className="w-full h-full p-4 flex flex-col gap-4">
-                <div className="h-6 w-1/2 bg-white/10 rounded-full mt-4" />
-                <div className="grid grid-cols-2 gap-2">
-                  <div className="aspect-[3/4] bg-white/5 rounded-lg animate-pulse" />
-                  <div className="aspect-[3/4] bg-white/5 rounded-lg animate-pulse" />
-                </div>
-                <div className="h-40 bg-red-600/20 rounded-xl flex items-center justify-center">
-                    <BookOpen className="text-red-500/40" size={48} />
-                </div>
-              </div>
+              <img
+                src="/print-do-app.jpg"
+                alt="Captura de tela do app BookFlix Oficial"
+                className="w-full h-full object-cover"
+              />
+
             </div>
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-red-600/5 blur-[120px] rounded-full z-0" />
           </div>
+
         </div>
       </section>
 
@@ -128,12 +126,12 @@ export default function Home() {
                 </div>
                 <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tighter leading-none">Download <br /><span className="text-[#E50914]">Bookflix APK</span></h2>
                 <p className="text-gray-400 text-sm">
-                  Baixe a versão oficial {versionLastApk}. Por ser um APK externo, seu celular pode alertar sobre segurança. 
+                  Baixe a versão oficial {versionLastApk}. Por ser um APK externo, seu celular pode alertar sobre segurança.
                   O arquivo é <strong>totalmente seguro</strong> e verificado.
                 </p>
                 <div className="flex items-start gap-3 bg-blue-500/10 border border-blue-500/20 p-4 rounded-xl">
-                    <ShieldCheck className="text-blue-500 shrink-0" size={20} />
-                    <p className="text-xs text-blue-200">Se o Google pedir para "Enviar para Análise", pode enviar sem medo para validação.</p>
+                  <ShieldCheck className="text-blue-500 shrink-0" size={20} />
+                  <p className="text-xs text-blue-200">Se o Google pedir para "Enviar para Análise", pode enviar sem medo para validação.</p>
                 </div>
                 <div className="pt-2">
                   <a href={downloadLink} download className="flex items-center justify-center gap-3 bg-white text-black px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-200 transition-all w-full">
