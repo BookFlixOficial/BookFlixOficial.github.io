@@ -12,7 +12,7 @@ import { FeatureCard } from "../components/card/FeatureCard";
 import { useEffect } from "react";
 
 export default function Home() {
-  const versionLastApk = "v2.3.0";
+  const versionLastApk = "v2.4.0";
   const baseUrl = window.location.origin;
   const downloadLink = `${baseUrl}/versions/bookflix-release-${versionLastApk}.apk`;
 
